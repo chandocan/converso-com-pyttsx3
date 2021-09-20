@@ -1,4 +1,4 @@
-
+# o audio aqui esta bem robotico da para instalar outros modulos que melhoram o mesmo 
 import pyttsx3
 from os import system, name
 import glob
