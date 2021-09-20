@@ -18,11 +18,11 @@ def apresentaMenu():
 limpar_terminal()
 apresentaMenu()
 
-# procura uma forma de deixa o texto em portuguễs por padrão
+# procura uma forma de deixa o texto em portuguễs por padrão logo abaixo
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 
-# vai pecorre uma liasta das vozes quando chega em  b'\x05pt-br' que é a brasileira vai para
+# vai pecorre uma lista das vozes quando chega em  b'\x05pt-br' que é a brasileira vai para
 for voice in voices:
     if voice.languages[0] == b'\x05pt-br':
         engine.setProperty('voice', voice.id)
@@ -36,7 +36,7 @@ engine.say('Bem vindo alfredo a programação com python')
 engine.runAndWait()
 input('Pressione Enter para continuar')
 
-# esta estraindo a lista de arquivos presentes no diretorio atual
+# esta extraindo a lista de arquivos presentes no diretorio atual
 # usou uma compressão de lista
 lista_arquivo = [f for f in glob.glob("*.txt")]
 while True:
